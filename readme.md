@@ -2,10 +2,16 @@
 
 目录如下:
 安卓动态调试七种武器之长生剑 - Smali Instrumentation
+
 安卓动态调试七种武器之孔雀翎 - Ida
+
 安卓动态调试七种武器之碧玉刀 - Hooking
+
 安卓动态调试七种武器之多情环 - Customized DVM
+
 安卓动态调试七种武器之离别钩 - Customized Kernel
+
 安卓动态调试七种武器之霸王枪 - Anti Anti-debugging
+
 安卓动态调试七种武器之拳头 - Tricks & Summary
 
