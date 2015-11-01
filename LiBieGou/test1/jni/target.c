@@ -1,7 +1,9 @@
 #include <stdio.h>
+#include <string.h>
+
 int count = 0;
 
-void sevenWeapons(int number)
+void  sevenWeapons(int number)
 {
     char* str = "Hello,LiBieGou!";
     printf("%s %d\n",str,number);

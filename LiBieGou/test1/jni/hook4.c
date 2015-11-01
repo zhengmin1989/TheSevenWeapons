@@ -126,7 +126,7 @@ int ptrace_call(pid_t pid, uint32_t addr, long *params, uint32_t num_params, str
     //
     if (i < num_params) {
         regs->ARM_sp -= (num_params - i) * sizeof(long) ;
-        putdata(pid, regs->ARM_sp, (char *)&params[i], (num_params - i) * sizeof(long));
+        putdata(pid, regs->ARM_sp, (char*)&params[i], (num_params - i) * sizeof(long));
     }
 
     regs->ARM_pc = addr;
@@ -140,7 +140,7 @@ int ptrace_call(pid_t pid, uint32_t addr, long *params, uint32_t num_params, str
     }
 
     regs->ARM_lr = 0;
-
+    
     if (ptrace_setregs(pid, regs) == -1
             || ptrace_continue(pid) == -1) {
         printf("error\n");
@@ -270,7 +270,7 @@ int main(int argc, char *argv[])
     
     char* so_path = "/data/local/tmp/libinject.so";
     char* function_name = "mzhengHook";
-    char* parameter = "7weapons";
+    char* parameter = "sevenWeapons";
     injectSo(pid, so_path, function_name, parameter);
     
     ptrace(PTRACE_DETACH, pid, NULL, 0);

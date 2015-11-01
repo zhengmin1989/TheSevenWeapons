@@ -1,0 +1,15 @@
+see TODOs within the code. Additionally:
+
+Crypto:
+Need to hook more crypto calls (not all cases of dofinal() are implemented)
+
+IPC:
+log setComponentEnabledSetting to spot dynamically enabled IPCs (seems to crash when hooking this method right now)
+add more details with inspection of specific data for extra of intents
+
+SSL:
+handle more cases of bad cert validations
+handle more checks on the use of non-SSL uri
+
+SQLite:
+hook more methods
